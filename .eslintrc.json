@@ -1,0 +1,9 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "semi": "error",
+    "quotes": ["error", "single"],
+    "import/no-anonymous-default-export": 0,
+    "react-hooks/exhaustive-deps": 0
+  }
+}

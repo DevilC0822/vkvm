@@ -1,0 +1,29 @@
+@layer tailwind-base,semi,components,utils;
+@layer tailwind-base{
+    @tailwind base;
+}
+@layer tailwind-components{
+    @tailwind components;
+}
+@layer tailwind-utils {
+    @tailwind utilities;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body .ant-layout-sider-trigger {
+  background-color: #f0f2ff !important;
+}
+body .mobile-menu {
+  border-inline-end: unset !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
