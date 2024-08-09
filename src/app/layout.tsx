@@ -7,7 +7,7 @@ import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const theme = {
+const theme = {
   color: {
     'primary-100': '#f0f2ff',
     'primary-200': '#d9dbff',
