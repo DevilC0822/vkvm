@@ -18,7 +18,7 @@ export const getToolTipText = (
 ): React.ReactNode => {
   const { rows = 1, maxWidth = 500, placeholder = '' } = options ?? {};
   const item = (
-    <div style={{ display: 'inline-flex', width: '100%' }}>
+    <div style={{ display: 'inline-flex', maxWidth: '100%' }}>
       <p
         style={{
           margin: 0,
@@ -41,7 +41,6 @@ export const getToolTipText = (
 };
 
 /**
- * 
  * @param url url
  * @param params 参数
  * @returns 返回拼接后的url

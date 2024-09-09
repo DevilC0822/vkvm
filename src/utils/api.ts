@@ -16,7 +16,8 @@ export const getKVData = async (key: string, filterType?: string | null) => {
   if (type === 'zset') {
     return { key, value: await kv.zrange(key, 0, -1), type };
   }
-  return { key, value: await kv.get(key), type };
+  const value = await kv.get(key);
+  return { key, value: typeof value === 'object' ? JSON.stringify(value) : value, type };
 };
 
 export const addKVData = async (key: string, value: any, type: string) => {
